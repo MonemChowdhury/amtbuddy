@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AmtBuddy: German paperwork in plain English</title>
-<meta name="description" content="Your exact document checklist, any official German letter explained in plain English, and the right reply in German. Join the early-access list.">
+<meta name="description" content="Your exact document checklist, any official German letter explained in plain English, and the right reply in German. Free early access: answer 5 quick questions.">
 <meta property="og:title" content="German paperwork, finally in plain English">
 <meta property="og:description" content="Checklists for your permit, official letters explained, replies drafted in German. Early access for new arrivals in Germany.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -97,8 +97,8 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:14px;border-top:1px soli
     <div>
       <h1>German paperwork, finally in <span class="mark">plain English</span>.</h1>
       <p class="lead">Get the exact document checklist for your permit, understand any official letter in two minutes, and send the right reply in German. Built for people who just moved to Germany.</p>
-      <div class="ctas"><a class="btn" href="#join" data-intent="waitlist">Join the free waitlist</a><a class="btn alt" href="#join" data-intent="preorder">Pre-order for €9</a></div>
-      <p class="trust">Made by an immigrant who has been through it. Early members help decide what we build first.</p>
+      <div class="ctas"><a class="btn" href="#join">Get free early access</a><a class="btn alt" href="#join">Take the 1-minute survey</a></div>
+      <p class="trust">Free. No payment, no card. Made by an immigrant who has been through it, and shaped by your answers.</p>
     </div>
     <div class="letter" aria-label="Example of a German official letter with a plain-English explanation">
       <span class="ex">EXAMPLE</span>
@@ -138,15 +138,13 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:14px;border-top:1px soli
 <section class="band soft" id="join">
   <div class="wrap offer">
     <div class="price">
-      <p style="font-weight:700;color:#d7dae1">Founding member offer</p>
-      <div class="big">€9</div>
-      <p style="margin-top:6px">one-time, for the first 3 months of full access</p>
-      <ul><li>Unlimited checklists and letter explanations</li><li>German reply drafts</li><li>English first; Bangla, Hindi and Urdu next</li><li>Full refund if it doesn't help you</li></ul>
-      <a class="btn" id="preorderBtn" href="#join" style="margin-top:20px;background:var(--hi);color:var(--ink);border-color:var(--hi);width:100%">Pre-order for €9</a>
-      <p class="fine" style="color:#aab0bd;margin-top:10px">Not ready? Join the free waitlist instead.</p>
+      <p style="font-weight:700;color:#d7dae1">Free early access</p>
+      <div class="big" style="font-size:40px">1 minute</div>
+      <p style="margin-top:6px">5 quick questions. Your answers decide what we build first.</p>
+      <ul><li>First in line when AmtBuddy opens</li><li>Free access for early members during testing</li><li>English first; Bangla, Hindi and Urdu next</li><li>No payment, no card, ever for this list</li></ul>
     </div>
     <form id="f" novalidate>
-      <h3 style="font-size:24px">Join the early-access list</h3>
+      <h3 style="font-size:24px">Get free early access</h3>
       <label>Email<input type="email" name="email" required autocomplete="email" placeholder="you@email.com"></label>
       <label>City<select name="city"><option value="">Choose…</option><option>Berlin</option><option>Munich</option><option>Hamburg</option><option>Frankfurt</option><option>Cologne</option><option>Stuttgart</option><option>Düsseldorf</option><option>Other city</option><option>Not in Germany yet</option></select></label>
       <label>Your situation<select name="situation"><option value="">Choose…</option><option>EU Blue Card</option><option>Chancenkarte</option><option>Work permit (other)</option><option>Student visa</option><option>Family reunion</option><option>Permanent residence</option><option>Citizenship</option><option>Other</option></select></label>
@@ -157,12 +155,20 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:14px;border-top:1px soli
           <label><input type="radio" name="pain" value="letters"> Understanding official letters</label>
           <label><input type="radio" name="pain" value="no-answer"> No answer from the office</label>
         </div></fieldset>
+      <fieldset style="border:0;padding:0;margin:0"><legend style="font-weight:700;font-size:15px;margin-bottom:6px">If it saved you hours and stress, what would 3 months of access be worth to you?</legend>
+        <div class="radios">
+          <label><input type="radio" name="price" value="0"> Nothing, I'd only use it free</label>
+          <label><input type="radio" name="price" value="5"> About €5</label>
+          <label><input type="radio" name="price" value="9"> About €9</label>
+          <label><input type="radio" name="price" value="15"> About €15</label>
+          <label><input type="radio" name="price" value="20+"> €20 or more</label>
+        </div></fieldset>
       <label>Preferred language<select name="lang"><option>English</option><option>Bangla</option><option>Hindi</option><option>Urdu</option><option>Arabic</option><option>Turkish</option><option>Other</option></select></label>
-      <input type="hidden" name="intent" value="waitlist"><input type="hidden" name="source" value="">
+      <input type="hidden" name="source" value="">
       <p class="err" id="err" role="alert"></p>
-      <button class="btn" type="submit" id="go">Join the waitlist</button>
-      <p class="fine">We'll only email you about AmtBuddy. No spam, unsubscribe anytime.</p>
-      <div class="done" id="done"><b>You're on the list ✓</b><p>Thank you! We'll email you as soon as early access opens.</p></div>
+      <button class="btn" type="submit" id="go">Get free early access</button>
+      <p class="fine">We'll only email you about AmtBuddy. No spam, no payment. Unsubscribe anytime.</p>
+      <div class="done" id="done"><b>You're on the list ✓</b><p>Thank you! Your answers really help. We'll email you as soon as early access opens.</p></div>
     </form>
   </div>
 </section>
@@ -172,9 +178,9 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:14px;border-top:1px soli
     <h2>Questions</h2>
     <details><summary>Is this legal advice?</summary><p>No. AmtBuddy gives general information, checklists, translations and plain-language explanations based on official public sources. It does not assess your individual legal case. For disputes, refusals or appeals, please speak to a lawyer or a free migration advice centre.</p></details>
     <details><summary>Who is behind this?</summary><p>Monem Chowdhury, an AI engineer who moved abroad himself and knows how stressful immigration paperwork is. Contact: info@monemshariar.com</p></details>
-    <details><summary>What happens to my letters and data?</summary><p>For now we only collect your email and the answers in the form above, to plan the product. When the tool launches, letters you upload will be used only to explain them to you, and you'll be able to delete them anytime.</p></details>
+    <details><summary>What happens to my letters and data?</summary><p>For now we only collect your email and the answers in the form above, to plan the product. They are stored privately and never sold. When the tool launches, letters you upload will be used only to explain them to you, and you'll be able to delete them anytime.</p></details>
     <details><summary>When does it launch?</summary><p>We're opening early access in small groups, starting with the situations people ask for most. Joining the list now gets you in first.</p></details>
-    <details><summary>Can I get a refund on the pre-order?</summary><p>Yes. If AmtBuddy doesn't help you, email us and we'll refund your €9 in full.</p></details>
+    <details><summary>Does it cost anything?</summary><p>No. Joining early access is free and we don't ask for any payment details. We ask what it would be worth to you only to plan a fair price later.</p></details>
   </div>
 </section>
 
@@ -182,30 +188,26 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:14px;border-top:1px soli
 
 <script>
 {
-// ===== Settings: fill these in before running ads =====
-const FORM_ENDPOINT = "";   // e.g. "https://formspree.io/f/xxxxxxx" (free). Empty = answers open in an email instead.
-const PREORDER_LINK = "";   // e.g. a Stripe Payment Link for €9. Empty = the button just marks the signup as a pre-order.
-const META_PIXEL_ID = "";   // your Meta Pixel ID, to see which ads bring signups
+// ===== Setting: paste your Google Apps Script web-app link (or a Formspree link) =====
+const FORM_ENDPOINT = "";
+const META_PIXEL_ID = "";   // optional: your Meta Pixel ID, to see which ads bring signups
 const CONTACT = "info@monemshariar.com";
-// ======================================================
+// =====================================================================================
 const f=document.getElementById('f'), err=document.getElementById('err');
 const q=new URLSearchParams(location.search);
 f.source.value=[q.get('utm_source'),q.get('utm_campaign'),q.get('utm_content')].filter(Boolean).join(' / ')||document.referrer||'direct';
 if(META_PIXEL_ID){ !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init',META_PIXEL_ID); fbq('track','PageView'); }
 const track=(e,d)=>{ try{ if(window.fbq) fbq('track',e,d||{}); }catch(x){} };
-const setIntent=i=>{ f.intent.value=i; document.getElementById('go').textContent=i==='preorder'?'Reserve my €9 spot':'Join the waitlist'; };
-document.querySelectorAll('[data-intent]').forEach(a=>a.addEventListener('click',()=>setIntent(a.dataset.intent)));
-document.getElementById('preorderBtn').addEventListener('click',e=>{ track('InitiateCheckout',{value:9,currency:'EUR'});
-  if(PREORDER_LINK){ e.preventDefault(); window.open(PREORDER_LINK,'_blank','noopener'); } else setIntent('preorder'); });
 f.addEventListener('submit',async e=>{ e.preventDefault(); err.textContent='';
-  const data=Object.fromEntries(new FormData(f));
+  const data=Object.fromEntries(new FormData(f)); data.page='amtbuddy'; data.time=new Date().toISOString();
   if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(data.email||'')){ err.textContent='Please enter a valid email.'; f.email.focus(); return; }
+  if(!FORM_ENDPOINT){ err.textContent='Sign-ups open very soon. Please email '+CONTACT+' in the meantime.'; return; }
   const btn=document.getElementById('go'); btn.disabled=true; btn.textContent='Sending…';
-  const ok=()=>{ [...f.children].forEach(c=>{ if(c.id!=='done') c.style.display='none'; }); document.getElementById('done').style.display='block';
-    track('Lead',{content_name:data.intent}); if(data.intent==='preorder'&&PREORDER_LINK) window.open(PREORDER_LINK,'_blank','noopener'); };
-  if(FORM_ENDPOINT){ try{ const r=await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)});
-      if(!r.ok) throw 0; ok(); }catch(x){ err.textContent='Something went wrong. Please try again, or email '+CONTACT; btn.disabled=false; setIntent(data.intent); } }
-  else { location.href='mailto:'+CONTACT+'?subject='+encodeURIComponent('AmtBuddy early access ('+data.intent+')')+'&body='+encodeURIComponent(Object.entries(data).map(([k,v])=>k+': '+v).join('\n')); ok(); } });
+  try{
+    if(FORM_ENDPOINT.includes('script.google.com')) await fetch(FORM_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(data)});
+    else { const r=await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)}); if(!r.ok) throw 0; }
+    [...f.children].forEach(c=>{ if(c.id!=='done') c.style.display='none'; }); document.getElementById('done').style.display='block'; track('Lead');
+  }catch(x){ err.textContent='Something went wrong. Please try again, or email '+CONTACT; btn.disabled=false; btn.textContent='Get free early access'; } });
 }
 </script>
 </body>
